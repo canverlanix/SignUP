@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#201F20"
+    tools:context=".Signup">
+
+    <TextView
+        android:id="@+id/idtex"
+        android:layout_width="228dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="96dp"
+        android:text="E-mail"
+        android:textColor="#D36361B4"
+        android:textSize="24"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="91dp" />
+
+    <EditText
+        android:id="@+id/idEmail"
+        android:layout_width="228dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:background="#9F9FB1"
+        android:ems="10"
+        android:hint="CArlos@gmail.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/idtex"
+        tools:layout_editor_absoluteX="91dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="235dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="#4330C2"
+        android:text="SIGNUP"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEmail"
+        app:layout_constraintVertical_bias="0.044"
+        tools:layout_editor_absoluteX="91dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
